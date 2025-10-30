@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>image gallery</title>
+        <style>
+            .gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+}
+.image-container{
+    overflow: hidden;
+    cursor: pointer;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-hover{
+    transform:scale(1,1);
+}
+
+
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  font-size: 35px;
+  color: #f6f6f6ff;
+  cursor: pointer;
+}
+
+        </style>
+    </head>
+  
+    <body>
+        <h1><b>image gallery</b>  animals</h1>
+        <div class="gallery">
+            <div class="image-container">
+                <img src="img1.jpg" alt="img1" class="image">
+
+            </div>
+            <div class="image-container">
+                <img src="img2.jpg" alt="img2" class="image">
+
+            </div>
+            <div class="image-container">
+                <img src="img3.jpg" alt="img3" class="image">
+            </div>
+             <div class="image-container">
+                <img src="img4.jpg" alt="img3" class="image">
+            </div>
+             <div class="image-container">
+                <img src="img5.jpg" alt="img3" class="image">
+            </div>
+             <div class="image-container">
+                <img src="img6.jpg" alt="img3" class="image">
+            </div>
+        </div>
+
+
+
+
+ 
+  <div class="modal" id="modal">
+    <img class="modal-image" id="modal-image">
+    <span class="close">&times;</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
